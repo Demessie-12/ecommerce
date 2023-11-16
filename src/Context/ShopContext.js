@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import all_product from "../Components/Assets/all_product"
+import { showAlert } from "../Components/Alert/Alert";
 
 export const ShopContext = createContext(null)
 
@@ -14,8 +15,15 @@ const getDefaultCart = ()=> {
 const ShopContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState(getDefaultCart())
+    const [menu, setMenu] = useState("shop")
+    
+    const SetMenufunction = (i)=> {
+        setMenu(i)
+    }
+
 
     const addToCart = (itemId)=> {
+        showAlert("success", "Item added to cart")
         setCartItems((prev)=>({...prev, [itemId]: prev[itemId] + 1 }))
         console.log(cartItems)
     }
@@ -44,7 +52,7 @@ const ShopContextProvider = (props) => {
         return totalItem
     }
 
-    const contextValue = {all_product, cartItems, addToCart, removeFromCart, getTotalCartAmount, getTotalCartItems}
+    const contextValue = {all_product, cartItems, addToCart, removeFromCart, getTotalCartAmount, getTotalCartItems, SetMenufunction, menu}
     
     return (
         <ShopContext.Provider value={contextValue}>

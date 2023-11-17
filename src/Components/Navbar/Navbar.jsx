@@ -25,8 +25,8 @@ const Navbar = () => {
                 <li onClick={()=> {SetMenufunction("traditionals")}}><Link style={{textDecoration: "none"}} to='/traditionals'>Traditional</Link> {menu === "traditionals" && <hr /> }</li>
             </ul>
             <div className="nav-login-cart">
-            <Link to='/login'><button>Login</button></Link>
-            <Link to='/cart'><img src={cart_icon} alt="" /></Link>
+            <Link to='/login' onClick={()=> {SetMenufunction("")}}><button>Login</button></Link>
+            <Link to='/cart' onClick={()=> {SetMenufunction("")}}><img src={cart_icon} alt="" /></Link>
             <div className="nav-cart-count">{getTotalCartItems()}</div>
             </div>
         </div>

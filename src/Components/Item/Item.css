@@ -1,5 +1,11 @@
-.item, .item img{
+.item {
     width: 280px;
+    height: 450;
+} 
+
+.item img{
+    max-width: 280px;
+    height: 335px;
 }
 .item p {
     margin: 6px 0px;

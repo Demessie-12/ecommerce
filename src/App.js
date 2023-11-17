@@ -10,10 +10,33 @@ import Footer from './Components/Footer/Footer';
 import men_banner from "./Components/Assets/banner_mens.png"
 import women_banner from "./Components/Assets/banner_women.png"
 import kid_banner from "./Components/Assets/banner_kids.png"
+import ethiopia_banner from "./Components/Assets/banner_ethiopia.jpg"
+import arab_banner from "./Components/Assets/banner_arab.jpg"
+import indian_banner from "./Components/Assets/banner_indian.jpg"
+import nigeria_banner from "./Components/Assets/banner_nigerian.jpg"
+import { ShopContext } from './Context/ShopContext';
+import { useContext } from 'react';
 
 // import { ShopCatagory } from './Pages/ShopCatagory';
 
 function App() {
+  const {tradition} = useContext(ShopContext)
+
+  const tradition_banner = (nation)=> {
+    if(nation === "ethiopia") {
+      return ethiopia_banner
+    }
+    else if (nation === "indian") {
+      return indian_banner
+    }
+    else if (nation === "arab") {
+      return arab_banner
+    }
+    else if (nation === "nigeria") {
+      return nigeria_banner
+    }
+  }
+
   return (
     <div>
       <BrowserRouter>
@@ -23,6 +46,7 @@ function App() {
           <Route path='/mens' element={<ShopCatagory banner={men_banner} category="men"/>}/>
           <Route path='/womens' element={<ShopCatagory banner={women_banner} category="women"/>}/>
           <Route path='/Kids' element={<ShopCatagory banner={kid_banner} category="kid"/>}/>
+          <Route path='/traditionals' element={<ShopCatagory banner={tradition_banner(tradition)} category={tradition} dropdown="yes"/>}/>
           <Route path='/product' element={<Product/>}>
             <Route path=':productId' element={<Product/>}/>
           </Route>

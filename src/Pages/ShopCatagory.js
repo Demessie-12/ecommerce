@@ -1,12 +1,17 @@
 import React, { useContext } from 'react'
 import "./CSS/ShopCatagory.css"
 import { ShopContext } from '../Context/ShopContext'
-import dropdown_icon from "../Components/Assets/dropdown_icon.png"
 import Item from '../Components/Item/Item'
 
 
 export const ShopCatagory = (props) => {
-  const {all_product} = useContext(ShopContext)
+  const {all_product, Settradition, tradition} = useContext(ShopContext)
+
+  const hadletradition = (event)=> {
+    const {value} = event.target 
+    Settradition(value)
+  }
+  
   return (
     <div className='shop-category'>
         <img className='shopcategory-banner' src={props.banner} alt='' />
@@ -14,9 +19,20 @@ export const ShopCatagory = (props) => {
           <p>
             <span>Showing 1-12</span> out of 36 products
           </p>
-          <div className="shopcategory-sort">
-            Sort by <img src={dropdown_icon} alt='' />
-          </div>
+          {props.dropdown === "yes" && 
+            <select
+              id='tradition'
+              value={tradition}
+              onChange={hadletradition}
+              name='tradition'
+            >
+              
+              <option value="ethiopia">Ethiopia</option> 
+              <option value="indian">Indian</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="arab">Arab</option>
+              </select>}
+        
         </div>
         <div className="shopcategory-products">
           {
@@ -26,12 +42,14 @@ export const ShopCatagory = (props) => {
               }
               else {
               return null}
-            })
+            },
+            console.log(tradition)
+            )
           }
         </div>
-          <div className="shopcategory-loadmore">
+          {/* <div className="shopcategory-loadmore">
             Explore More
-          </div>
+          </div> */}
     </div>
   )
 }

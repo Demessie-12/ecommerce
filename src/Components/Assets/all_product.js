@@ -34,6 +34,35 @@ import p33_img from "./product_33.png";
 import p34_img from "./product_34.png";
 import p35_img from "./product_35.png";
 import p36_img from "./product_36.png";
+import p37_img from "./product_37.jpg";
+import p38_img from "./product_38.jpg";
+import p39_img from "./product_39.jpg"
+import p40_img from "./product_40.jpg";
+import p41_img from "./product_41.jpg";
+import p42_img from "./product_42.jpg";
+import p43_img from "./product_43.jpg";
+import p44_img from "./product_44.jpg";
+import p45_img from "./product_45.jpg";
+import p46_img from "./product_46.jpg";
+import p47_img from "./product_47.jpg";
+import p48_img from "./product_48.jpg";
+import p49_img from "./product_49.jpg";
+import p50_img from "./product_50.jpeg";
+import p51_img from "./product_51.jpg";
+import p52_img from "./product_52.jpg";
+import p53_img from "./product_53.jpg";
+import p54_img from "./product_54.jpg";
+import p55_img from "./product_55.jpg";
+import p56_img from "./product_56.jpg";
+import p57_img from "./product_57.jpg";
+import p58_img from "./product_58.jpg";
+import p59_img from "./product_59.jpg";
+import p60_img from "./product_60.jpg";
+import p61_img from "./product_61.jpg";
+import p62_img from "./product_62.jpg";
+import p63_img from "./product_63.jpg";
+import p64_img from "./product_64.jpg";
+
 
 let all_product = [
   {
@@ -323,6 +352,230 @@ let all_product = [
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,
+  },
+  {
+    id: 37,
+    name: "Amazing habesha kemis",
+    category: "ethiopia",
+    image: p37_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 38,
+    name: "Blue tlet habesha kemis",
+    category: "ethiopia",
+    image: p38_img,
+    new_price: 95.0,
+    old_price: 100.5,
+  },
+  {
+    id: 39,
+    name: "Female oromo culture dress with chele",
+    category: "ethiopia",
+    image: p39_img,
+    new_price: 75.0,
+    old_price: 90.0,
+  },
+  {
+    id: 40,
+    name: "Female oromo culture dress",
+    category: "ethiopia",
+    image: p40_img,
+    new_price: 80.0,
+    old_price: 120.0,
+  },
+  {
+    id: 41,
+    name: "Habesha kemis with kaba",
+    category: "ethiopia",
+    image: p41_img,
+    new_price: 65.0,
+    old_price: 99.5,
+  },
+  {
+    id: 42,
+    name: "Male jano cloth",
+    category: "ethiopia",
+    image: p42_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 43,
+    name: "Mens Ethiopian cloth",
+    category: "ethiopia",
+    image: p43_img,
+    new_price: 105.0,
+    old_price: 140.0,
+  },
+  {
+    id: 44,
+    name: "tigrayan female cloth",
+    category: "ethiopia",
+    image: p44_img,
+    new_price: 80.0,
+    old_price: 120.5,
+  },
+  {
+    id: 45,
+    name: "Amazing Indian dress",
+    category: "indian",
+    image: p45_img,
+    new_price: 65.0,
+    old_price: 100.0,
+  },
+  {
+    id: 46,
+    name: "Indian female cloth",
+    category: "indian",
+    image: p46_img,
+    new_price: 60.0,
+    old_price: 90.0,
+  },
+  {
+    id: 47,
+    name: "Indian groom men cloth",
+    category: "indian",
+    image: p47_img,
+    new_price: 55.0,
+    old_price: 100.0,
+  },
+  {
+    id: 48,
+    name: "Indian kurta cloth",
+    category: "indian",
+    image: p48_img,
+    new_price: 65.0,
+    old_price: 110.0,
+  },
+  {
+    id: 49,
+    name: "Indian male kurta cloth",
+    category: "indian",
+    image: p49_img,
+    new_price: 85.0,
+    old_price: 120.0,
+  },
+  {
+    id: 50,
+    name: "Indian wedding cloth",
+    category: "indian",
+    image: p50_img,
+    new_price: 95.0,
+    old_price: 140.0,
+  },
+  {
+    id: 51,
+    name: "Modern nigerian men wear",
+    category: "nigeria",
+    image: p51_img,
+    new_price: 85.0,
+    old_price: 130.0,
+  },
+  {
+    id: 52,
+    name: "Nigerian beuty femal wear",
+    category: "nigeria",
+    image: p52_img,
+    new_price: 105.0,
+    old_price: 150.0,
+  },
+  {
+    id: 53,
+    name: "Nigerian colorfull dress",
+    category: "nigeria",
+    image: p53_img,
+    new_price: 75.0,
+    old_price: 125.0,
+  },
+  {
+    id: 54,
+    name: "Nigerian men traditional cloth",
+    category: "nigeria",
+    image: p54_img,
+    new_price: 65.0,
+    old_price: 100.0,
+  },
+  {
+    id: 55,
+    name: "Nigerian weeding cloth",
+    category: "nigeria",
+    image: p55_img,
+    new_price: 125.0,
+    old_price: 150.0,
+  },
+  {
+    id: 56,
+    name: "Traditional nigerian men cloth",
+    category: "nigeria",
+    image: p56_img,
+    new_price: 105.0,
+    old_price: 120.0,
+  },
+  {
+    id: 57,
+    name: "Arab muslim long sleeves cloth",
+    category: "arab",
+    image: p57_img,
+    new_price: 55.0,
+    old_price: 80.0,
+  },
+  {
+    id: 58,
+    name: "Arab muslin set",
+    category: "arab",
+    image: p58_img,
+    new_price: 65.0,
+    old_price: 90.0,
+  },
+  {
+    id: 59,
+    name: "Arab traditional cloth Thobe",
+    category: "arab",
+    image: p59_img,
+    new_price: 50.0,
+    old_price: 75.0,
+  },
+  {
+    id: 60,
+    name: "Arab women dress",
+    category: "arab",
+    image: p60_img,
+    new_price: 75.0,
+    old_price: 100.0,
+  },
+  {
+    id: 61,
+    name: "Arab women wear clearance",
+    category: "arab",
+    image: p61_img,
+    new_price: 55.0,
+    old_price: 90.0,
+  },
+  {
+    id: 62,
+    name: "Arab womens Thobe nashal",
+    category: "arab",
+    image: p62_img,
+    new_price: 70.0,
+    old_price: 90.0,
+  },
+  {
+    id: 63,
+    name: "Mens arab cloth",
+    category: "arab",
+    image: p63_img,
+    new_price: 75.0,
+    old_price: 90.0,
+  },
+  {
+    id: 64,
+    name: "Modern islamic clothing",
+    category: "arab",
+    image: p64_img,
+    new_price: 80.0,
+    old_price: 100.0,
   },
 ];
 

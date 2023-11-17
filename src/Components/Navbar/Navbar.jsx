@@ -22,6 +22,7 @@ const Navbar = () => {
                 <li onClick={()=> {SetMenufunction("mens")}}><Link style={{textDecoration: "none"}} to='/mens'>Men</Link> {menu === "mens" && <hr /> }</li>
                 <li onClick={()=> {SetMenufunction("womens")}}><Link style={{textDecoration: "none"}} to='/womens'>Women</Link> {menu === "womens" && <hr /> }</li>
                 <li onClick={()=> {SetMenufunction("kids")}}><Link style={{textDecoration: "none"}} to='/kids'>Kids</Link> {menu === "kids" && <hr /> }</li>
+                <li onClick={()=> {SetMenufunction("traditionals")}}><Link style={{textDecoration: "none"}} to='/traditionals'>Traditional</Link> {menu === "traditionals" && <hr /> }</li>
             </ul>
             <div className="nav-login-cart">
             <Link to='/login'><button>Login</button></Link>

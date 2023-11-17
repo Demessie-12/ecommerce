@@ -36,3 +36,12 @@
     font-size: 18px;
     font-weight: 500;
 }
+#tradition {
+    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 550;
+    border-radius: 5px;
+    color: rgb(231, 16, 203);
+    border: 2px solid red;
+}

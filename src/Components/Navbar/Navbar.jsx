@@ -13,9 +13,9 @@ const Navbar = () => {
 
     return(
         <div className="navbar">
-            <div className="nav-logo">
-                <img src={logo} alt="" />
-                <p>SHOPPER</p>
+            <div className="nav-logo" onClick={()=> {SetMenufunction("shop")}}>
+            <Link style={{textDecoration: "none"}} to='/' className="nav-logo"><img src={logo} alt="" /> <p>SHOPPER</p></Link>
+                
             </div>
             <ul className="nav-menu">
                 <li onClick={()=> {SetMenufunction("shop")}}><Link style={{textDecoration: "none"}} to='/'>Shop</Link> {menu === "shop" && <hr /> }</li>

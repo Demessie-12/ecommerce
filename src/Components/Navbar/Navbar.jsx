@@ -1,17 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css"
 
 import logo from "../Assets/logo.png"
 import cart_icon  from "../Assets/cart_icon.png"
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import GetCookie from "../../hooks/GetCookie";
+import Dropdown from "../Dropdown/Dropdown";
 
 
 const Navbar = () => {
 
-    const {getTotalCartItems,  SetMenufunction, menu } = useContext(ShopContext)
+    const {getTotalCartItems,  SetMenufunction, menu} = useContext(ShopContext)
+    const [openprofile, setopenprofile] = useState(false);
+    const changeopenProfile = ()=> setopenprofile((prev) => !prev)
 
     return(
+        <>
         <div className="navbar">
             <div className="nav-logo" onClick={()=> {SetMenufunction("shop")}}>
             <Link style={{textDecoration: "none"}} to='/' className="nav-logo"><img src={logo} alt="" /> <p>SHOPPER</p></Link>
@@ -25,11 +30,16 @@ const Navbar = () => {
                 <li onClick={()=> {SetMenufunction("traditionals")}}><Link style={{textDecoration: "none"}} to='/traditionals'>Traditional</Link> {menu === "traditionals" && <hr /> }</li>
             </ul>
             <div className="nav-login-cart">
-            <Link to='/login' onClick={()=> {SetMenufunction("")}}><button>Login</button></Link>
+                {GetCookie("user") ? <><button onClick={changeopenProfile}>{GetCookie("user")}
+                </button>  {openprofile && <Dropdown onClick={changeopenProfile}/>}</>
+            : <Link to='/login' onClick={()=> {SetMenufunction("")}}><button>Login
+                </button></Link>}
+                
             <Link to='/cart' onClick={()=> {SetMenufunction("")}}><img src={cart_icon} alt="" /></Link>
             <div className="nav-cart-count">{getTotalCartItems()}</div>
             </div>
         </div>
+        </>
     )
 }
 

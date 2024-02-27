@@ -1,28 +1,38 @@
 .descriptionbox {
-    margin: 100px 120px;
+  margin: 100px 120px;
+
+  @media screen and (max-width: 1300px) {
+    margin: 50px 70px;
+  }
 }
 .descriptionbox-navigator {
-    display: flex;
+  display: flex;
 }
 .descriptionbox-nav-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
-    width: 171px;
-    height: 70px;
-    border: 1px solid #d0d0d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  width: 171px;
+  height: 70px;
+  border: 1px solid #d0d0d0;
 }
 .descriptionbox-nav-box.fade {
-    background: #fbfbfb;
-    color: #6d6d6d;
+  background: #fbfbfb;
+  color: #6d6d6d;
 }
 .descriptionbox-description {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    border: 1px solid #d0d0d0;
-    padding: 48px;
-    padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 1px solid #d0d0d0;
+  padding: 48px;
+  padding-bottom: 70px;
+  font-size: 18px;
+
+  @media screen and (max-width: 1300px) {
+    padding: 40px;
+    padding-bottom: 50px;
+  }
 }

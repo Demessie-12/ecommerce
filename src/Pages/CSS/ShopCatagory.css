@@ -1,47 +1,49 @@
 .shopcategory-banner {
-    display: block;
-    margin: 30px auto;
-    width: 82%;
+  display: block;
+  margin: 30px auto;
+  width: 82%;
 }
 .shopcategory-indexSort {
-    display: flex;
-    margin: 0px 170px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  font-size: 18px;
+  margin: 0px 12vw;
+  justify-content: space-between;
+  align-items: center;
 }
 .shopcategory-sort {
-    padding: 10px 20px;
-    border-radius: 40px;
-    border: 1px solid #888;
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
 }
 .shopcategory-indexSort p span {
-    font-weight: 600;
+  font-weight: 600;
 }
 .shopcategory-products {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 20px 150px;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 9vw;
+  gap: 20px;
+  row-gap: 25px;
 }
 .shopcategory-loadmore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px auto;
-    width: 233px;
-    height: 69px;
-    border-radius: 75px;
-    background: #ededed;
-    color: #787878;
-    font-size: 18px;
-    font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
 }
 #tradition {
-    width: 150px;
-    font-size: 20px;
-    padding: 10px;
-    font-weight: 550;
-    border-radius: 5px;
-    color: rgb(231, 16, 203);
-    border: 2px solid red;
+  width: 150px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 550;
+  border-radius: 5px;
+  color: rgb(231, 16, 203);
+  border: 2px solid red;
 }

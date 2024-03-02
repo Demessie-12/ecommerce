@@ -4,16 +4,34 @@
   padding: 16px;
   box-shadow: 0 1px 3px -2px black;
   height: 65px;
+
+  @media screen and (max-width: 1100px) {
+    padding: 10px 5px;
+  }
 }
 .nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  @media screen and (max-width: 1100px) {
+    /* width: 50px; */
+  }
+}
+.nav-logo img {
+  @media screen and (max-width: 1100px) {
+    width: 50px;
+  }
 }
 .nav-logo p {
   color: #171717;
   font-size: 38px;
   font-weight: 600;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 25px;
+    margin-right: 10px;
+  }
 }
 .nav-menu {
   display: flex;
@@ -23,6 +41,11 @@
   color: #626262;
   font-size: 20px;
   font-weight: 500px;
+
+  @media screen and (max-width: 1100px) {
+    gap: 20px;
+    padding: 0;
+  }
 }
 .nav-menu li {
   display: flex;
@@ -32,6 +55,10 @@
   color: #626262;
   gap: 3px;
   cursor: pointer;
+
+  @media screen and (max-width: 1100px) {
+    gap: 0px;
+  }
 }
 .nav-menu hr {
   border: none;
@@ -39,11 +66,19 @@
   height: 3px;
   border-radius: 10px;
   background: #ff4141;
+
+  @media screen and (max-width: 1100px) {
+    width: 60px;
+  }
 }
 .nav-login-cart {
   display: flex;
   align-items: center;
   gap: 45px;
+
+  @media screen and (max-width: 1100px) {
+    gap: 5px;
+  }
 }
 .nav-login-cart button {
   width: 130px;
@@ -56,6 +91,12 @@
   font-weight: 500;
   background: white;
   cursor: pointer;
+
+  @media screen and (max-width: 1100px) {
+    width: 90px;
+    height: 45px;
+    font-size: 18px;
+  }
 }
 .nav-login-cart button:active {
   background: #f3f3f3;
@@ -72,4 +113,8 @@
   font-size: 14px;
   background: red;
   color: white;
+
+  @media screen and (max-width: 1100px) {
+    margin-left: -15px;
+  }
 }

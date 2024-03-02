@@ -6,11 +6,23 @@
   display: flex;
   gap: 17px;
   padding-left: 5vw;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 3vw;
+    gap: 5px;
+  }
 }
 .productdisplay-img-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .productdisplay-img-list img {
   height: 163px;
@@ -18,12 +30,20 @@
   @media screen and (max-width: 1300px) {
     height: 118px;
   }
+  @media screen and (max-width: 1100px) {
+    height: 13.5vw;
+    /* max-height: 15vw; */
+  }
 }
 .productdisplay-main-img {
   height: 700px;
 
   @media screen and (max-width: 1300px) {
     height: 500px;
+  }
+  @media screen and (max-width: 1100px) {
+    height: 60vw;
+    max-height: 600px;
   }
 }
 .productdisplay-right {
@@ -34,6 +54,9 @@
   @media screen and (max-width: 1300px) {
     margin: 0px 40px;
   }
+  @media screen and (max-width: 1100px) {
+    margin: 0px 0 0 20px;
+  }
 }
 .productdisplay-right h1 {
   color: #3d3d3d;
@@ -42,6 +65,10 @@
 
   @media screen and (max-width: 1300px) {
     font-size: 30px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    font-size: 27px;
   }
 }
 .productdisplay-right-star {
@@ -88,6 +115,9 @@
   @media screen and (max-width: 1300px) {
     margin: 15px 0px;
   }
+  @media screen and (max-width: 1100px) {
+    margin: 10px 0px;
+  }
 }
 .productdisplay-right-sizes div {
   padding: 18px 24px;
@@ -95,6 +125,10 @@
   border: 1px solid #ebebeb;
   border-radius: 3px;
   cursor: pointer;
+
+  @media screen and (max-width: 1100px) {
+    padding: 10px 15px;
+  }
 }
 .productdisplay-right button {
   padding: 20px 40px;
@@ -104,12 +138,18 @@
   color: white;
   background: #ff4141;
   margin-top: 30px;
+  border-radius: 5px;
   border: none;
   outline: none;
   cursor: pointer;
 
   @media screen and (max-width: 1300px) {
     margin-top: 15px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    padding: 15px 30px;
+    width: 170px;
   }
 }
 .productdisplay-right-category {

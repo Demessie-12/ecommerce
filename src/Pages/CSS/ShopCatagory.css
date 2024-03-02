@@ -2,6 +2,10 @@
   display: block;
   margin: 30px auto;
   width: 82%;
+
+  @media screen and (max-width: 1100px) {
+    margin-left: 5vw;
+  }
 }
 .shopcategory-indexSort {
   display: flex;
@@ -9,6 +13,10 @@
   margin: 0px 12vw;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1100px) {
+    margin: 0px 10vw;
+  }
 }
 .shopcategory-sort {
   padding: 10px 20px;
@@ -24,6 +32,10 @@
   margin: 20px 9vw;
   gap: 20px;
   row-gap: 25px;
+
+  @media screen and (max-width: 1100px) {
+    margin-left: 5vw;
+  }
 }
 .shopcategory-loadmore {
   display: flex;

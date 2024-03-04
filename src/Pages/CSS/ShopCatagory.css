@@ -36,6 +36,22 @@
   @media screen and (max-width: 1100px) {
     margin-left: 5vw;
   }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.shopcategory-products .item {
+  @media screen and (max-width: 768px) {
+    width: 27vw;
+  }
+  /* height: 450; */
+}
+
+.shopcategory-products .item img {
+  @media screen and (max-width: 768px) {
+    width: 27vw;
+  }
 }
 .shopcategory-loadmore {
   display: flex;

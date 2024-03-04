@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: space-between;
   background: white;
-  width: 730px;
+  /* width: 730px; */
   height: 70px;
   border-radius: 80px;
   border: 1px solid #e3e3e3;
@@ -52,8 +52,8 @@
 }
 
 .newsletter input {
-  width: 500px;
-  margin-left: 30px;
+  /* width: 500px; */
+  /* margin-left: 30px; */
   border: none;
   outline: none;
   color: #616161;

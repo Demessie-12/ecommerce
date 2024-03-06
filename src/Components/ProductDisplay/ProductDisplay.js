@@ -51,7 +51,7 @@ const ProductDisplay = (props) => {
         </div>
         <div className="productdisplay-right-prices">
           <div className="productdisplay-right-price-old">
-            ${product.old_price}
+            Price: <span>${product.old_price}</span>
           </div>
           <div className="productdisplay-right-price-new">
             ${product.new_price}
@@ -115,7 +115,8 @@ const ProductDisplay = (props) => {
           ADD TO CART
         </button>
         <p className="productdisplay-right-category">
-          <span>Category :</span>Women, T-Shirt, Crop Top
+          <span>Category :</span>
+          {product.category}
         </p>
         <p className="productdisplay-right-category">
           <span>tags :</span>Modern, Latest

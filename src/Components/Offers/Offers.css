@@ -23,6 +23,8 @@
     padding: 0px;
   }
   @media screen and (max-width: 500px) {
+    width: 100vw;
+    margin: 0px;
     height: 230px;
     margin-bottom: 30px;
     padding: 0px;

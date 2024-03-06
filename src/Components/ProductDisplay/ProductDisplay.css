@@ -156,10 +156,14 @@
   }
   @media screen and (max-width: 500px) {
     order: 2;
+    font-size: 16px;
     margin: 5px 0px 0px 5px;
   }
 }
 .productdisplay-right-price-old {
+  color: black;
+}
+.productdisplay-right-price-old span {
   color: #818181;
   text-decoration: line-through;
 }

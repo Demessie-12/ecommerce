@@ -5,8 +5,13 @@
   gap: 10px;
   margin-bottom: 100px;
   /* height: 90vh; */
+
   @media screen and (max-width: 1100px) {
     margin-bottom: 80px;
+  }
+  @media screen and (max-width: 500px) {
+    gap: 5px;
+    margin-bottom: 40px;
   }
 }
 .popular h1 {
@@ -17,6 +22,12 @@
   @media screen and (max-width: 1100px) {
     font-size: 40px;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 }
 
 .popular hr {
@@ -24,13 +35,55 @@
   height: 6px;
   border-radius: 10px;
   background: #252525;
+
+  @media screen and (max-width: 500px) {
+    width: 150px;
+  }
 }
 .popular-item {
   margin-top: 50px;
   display: flex;
+  align-self: flex-start;
   gap: 30px;
+  overflow-x: scroll;
+  width: 97vw;
+  margin-left: 5px;
+  margin-right: 10px;
+  padding-bottom: 20px;
 
   @media screen and (max-width: 1100px) {
     gap: 20px;
   }
+  @media screen and (max-width: 500px) {
+    gap: 10px;
+  }
+}
+.popular-item .item,
+.popular-item .item img {
+  @media screen and (max-width: 768px) {
+    width: 27vw;
+  }
+  @media screen and (max-width: 500px) {
+    width: 40vw;
+  }
+}
+
+/* .popular-item > #ID2 {
+  display: none;
+} */
+.popular-item > a {
+  height: fit-content;
+  align-self: center;
+  margin: 0px 10vw;
+}
+.see-more {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  /* margin-top: 120px; */
+  font-size: 18px;
+  color: white;
+  background-color: #035c53;
+  border: none;
+  border-radius: 10px;
 }

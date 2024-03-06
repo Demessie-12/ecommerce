@@ -12,6 +12,11 @@
   background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
 
   @media screen and (max-width: 1100px) {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 500px) {
     font-size: 35px;
     text-align: center;
   }
@@ -29,10 +34,23 @@
     font-size: 35px;
     text-align: center;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    text-align: center;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 .newsletter p {
   color: #454545;
   font-size: 20px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 .newsletter div {
@@ -49,20 +67,31 @@
     width: 70vw;
     height: 60px;
   }
+  @media screen and (max-width: 500px) {
+    width: 70vw;
+    height: 50px;
+  }
 }
 
 .newsletter input {
-  /* width: 500px; */
-  /* margin-left: 30px; */
+  width: 50vw;
+  max-width: 500px;
+  margin-left: 20px;
   border: none;
   outline: none;
   color: #616161;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 18px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
 }
 
 .newsletter div button {
-  width: 210px;
+  /* width: 210px; */
+  width: 25vw;
+  max-width: 190px;
   height: 70px;
   border-radius: 80px;
   background: black;
@@ -71,7 +100,11 @@
   cursor: pointer;
 
   @media screen and (max-width: 1100px) {
-    width: 200px;
+    /* width: 200px; */
     height: 60px;
+  }
+  @media screen and (max-width: 500px) {
+    /* width: 180px; */
+    height: 50px;
   }
 }

@@ -7,6 +7,10 @@
   margin-top: 50px;
   background-color: #035c53;
   color: white;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 .goto-top {
   display: flex;

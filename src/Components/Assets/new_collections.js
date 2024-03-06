@@ -17,7 +17,7 @@ let new_collections = [
   },
   {
     id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Orange Colour blocked Hooded Sweatshirt",
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -59,7 +59,7 @@ let new_collections = [
   },
   {
     id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Orange Colour blocked Hooded Sweatshirt",
     image: p8_img,
     new_price: 100.0,
     old_price: 150.0,

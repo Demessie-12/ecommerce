@@ -33,7 +33,7 @@ const Navbar = ({ isopen, setIsOpen }) => {
           }}
         >
           <Link style={{ textDecoration: "none" }} to="/" className="nav-logo">
-            <img src={logo} alt="" /> <p>SHOPPER</p>
+            <img src={logo} alt="" /> <p>ShopIt</p>
           </Link>
         </div>
         <ul className="nav-menu">

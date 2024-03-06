@@ -14,6 +14,9 @@
     justify-content: start;
     box-shadow: none;
   }
+  @media screen and (max-width: 500px) {
+    height: 50px;
+  }
 }
 
 .Nav-icon {
@@ -127,6 +130,10 @@
     right: 10px;
     top: 20px;
   }
+  @media screen and (max-width: 500px) {
+    gap: 2px;
+    top: 12px;
+  }
 }
 .nav-login-cart button {
   width: 130px;
@@ -144,6 +151,9 @@
     width: 90px;
     height: 45px;
     font-size: 18px;
+  }
+  @media screen and (max-width: 500px) {
+    height: 40px;
   }
 }
 .nav-login-cart button:active {

@@ -1,6 +1,35 @@
 .productdisplay {
   display: flex;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
   /* padding: 0px 170px; */
+}
+.productdisplay-top {
+  display: none;
+
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+.productdisplay-top > .upper {
+  display: flex;
+}
+.productdisplay-top h1 {
+  margin-left: 5px;
+  font-size: 16px;
+}
+.productdisplay-top-star {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  position: absolute;
+  right: 5px;
 }
 .productdisplay-left {
   display: flex;
@@ -13,6 +42,11 @@
     padding-left: 3vw;
     gap: 5px;
   }
+  @media screen and (max-width: 768px) {
+    padding-left: 2vw;
+    gap: 1px;
+    justify-content: start;
+  }
 }
 .productdisplay-img-list {
   display: flex;
@@ -22,6 +56,12 @@
   @media screen and (max-width: 1100px) {
     display: flex;
     flex-direction: row;
+  }
+  @media screen and (max-width: 1100px) {
+    gap: 5px;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
   }
 }
 .productdisplay-img-list img {
@@ -45,6 +85,11 @@
     height: 60vw;
     max-height: 600px;
   }
+  @media screen and (max-width: 500px) {
+    order: -1;
+    width: 95vw;
+    height: auto;
+  }
 }
 .productdisplay-right {
   margin: 0px 70px;
@@ -56,6 +101,9 @@
   }
   @media screen and (max-width: 1100px) {
     margin: 0px 0 0 20px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0px 0 0 10px;
   }
 }
 .productdisplay-right h1 {
@@ -70,6 +118,12 @@
   @media screen and (max-width: 1300px) {
     font-size: 27px;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 .productdisplay-right-star {
   display: flex;
@@ -78,6 +132,14 @@
   gap: 5px;
   color: #1c1c1c;
   font-size: 16px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 5px;
+    gap: 3px;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 .productdisplay-right-prices {
   display: flex;
@@ -89,6 +151,13 @@
   @media screen and (max-width: 1300px) {
     margin: 15px 0px;
   }
+  @media screen and (max-width: 768px) {
+    margin: 5px 0px;
+  }
+  @media screen and (max-width: 500px) {
+    order: 2;
+    margin: 5px 0px 0px 5px;
+  }
 }
 .productdisplay-right-price-old {
   color: #818181;
@@ -96,6 +165,20 @@
 }
 .productdisplay-right-price-new {
   color: #ff4141;
+}
+.productdisplay-right-description {
+  @media screen and (max-width: 500px) {
+    order: 1;
+    margin-top: 0px;
+  }
+}
+.productdisplay-right-size {
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    order: 0;
+  }
 }
 .productdisplay-right-size h1 {
   margin-top: 30px;
@@ -105,6 +188,12 @@
 
   @media screen and (max-width: 1300px) {
     margin-top: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 5px;
+  }
+  @media screen and (max-width: 500px) {
+    display: flex;
   }
 }
 .productdisplay-right-sizes {
@@ -118,6 +207,13 @@
   @media screen and (max-width: 1100px) {
     margin: 10px 0px;
   }
+  @media screen and (max-width: 768px) {
+    margin: 5px 0px;
+  }
+  @media screen and (max-width: 500px) {
+    order: 0;
+    margin-left: 30px;
+  }
 }
 .productdisplay-right-sizes div {
   padding: 18px 24px;
@@ -129,6 +225,17 @@
   @media screen and (max-width: 1100px) {
     padding: 10px 15px;
   }
+  @media screen and (max-width: 1100px) {
+    padding: 5px 7px;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 10px 15px;
+    border-radius: 7px;
+  }
+}
+.productdisplay-right-sizes .selected {
+  color: white;
+  background-color: #035c53;
 }
 .productdisplay-right button {
   padding: 20px 40px;
@@ -147,13 +254,37 @@
     margin-top: 15px;
   }
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1100px) {
     padding: 15px 30px;
     width: 170px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    padding: 15px 20px;
+    width: 130px;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    order: 5;
+    font-size: 13px;
+    padding: 15px 20px;
+    width: 130px;
+    margin-top: 10px;
+    align-self: center;
   }
 }
 .productdisplay-right-category {
   margin-top: 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    margin-left: 5px;
+    order: 3;
+  }
 }
 .productdisplay-right-category span {
   font-weight: 600;

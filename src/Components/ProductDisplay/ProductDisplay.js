@@ -9,6 +9,13 @@ const ProductDisplay = (props) => {
   const { product } = props;
   const [selectedSize, setselectedsize] = useState(null);
   const { addToCart } = useContext(ShopContext);
+
+  const checkcategory = () => {
+    return ["men", "women", "kid"].includes(product.category)
+      ? product.category
+      : "traditional";
+  };
+
   return (
     <div className="productdisplay">
       <div className="productdisplay-top">
@@ -115,11 +122,13 @@ const ProductDisplay = (props) => {
           ADD TO CART
         </button>
         <p className="productdisplay-right-category">
-          <span>Category :</span>
-          {product.category}
+          <span>Category : </span>
+          <Link style={{ textDecoration: "none" }} to={`/${checkcategory()}s`}>
+            {product.category}
+          </Link>
         </p>
         <p className="productdisplay-right-category">
-          <span>tags :</span>Modern, Latest
+          <span>tags : </span>Modern, Latest
         </p>
       </div>
     </div>

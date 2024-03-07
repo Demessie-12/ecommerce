@@ -16,6 +16,7 @@ import indian_banner from "./Components/Assets/banner_indian.jpg";
 import nigeria_banner from "./Components/Assets/banner_nigerian.jpg";
 import { ShopContext } from "./Context/ShopContext";
 import { useContext, useState } from "react";
+import NavMobile from "./Components/NavMobile/NavMobile";
 
 // import { ShopCatagory } from './Pages/ShopCatagory';
 
@@ -36,8 +37,11 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={isopen && "fixed-position"}>
       <BrowserRouter>
+        {isopen && (
+          <NavMobile isopen={isopen} setIsOpen={setIsOpen}></NavMobile>
+        )}
         <Navbar isopen={isopen} setIsOpen={setIsOpen} />
         <Routes>
           <Route path="/" element={<Shop />} />

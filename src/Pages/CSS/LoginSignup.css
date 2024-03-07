@@ -56,7 +56,7 @@
   top: -25px;
   padding-left: 40px;
   color: rgb(131, 126, 126);
-  z-index: 10;
+  z-index: 2;
 
   @media screen and (max-width: 500px) {
     font-size: 12px;

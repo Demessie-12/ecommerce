@@ -22,7 +22,8 @@ const Navbar = ({ isopen, setIsOpen }) => {
         <div className="Nav-icon">
           <FaBars
             onClick={() => {
-              setIsOpen(!isopen);
+              setIsOpen(true);
+              console.log(isopen);
             }}
           />
         </div>

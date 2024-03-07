@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+.fixed-position {
+  position: fixed;
+  overflow-y: hidden;
+}
 html {
   scroll-behavior: smooth;
 }

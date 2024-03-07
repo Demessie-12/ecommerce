@@ -75,7 +75,7 @@ export const LoginSignup = () => {
             <p>Example: Shop1234</p>
           </div>
         </div>
-        <Link to={correctData ? "/profile" : "/login"}>
+        <Link to={correctData ? "/" : "/login"}>
           <button onClick={ckecklogin}>
             {isnewuser === true ? "Continue" : "Log in"}
           </button>

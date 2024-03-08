@@ -11,29 +11,37 @@ export const LoginSignup = () => {
     username: "",
     email: "",
     password: "",
+    isAgreed: true,
   });
 
   function handleChane(event) {
-    const { name, value } = event.target;
+    const { name, value, type, checked } = event.target;
     setFormData((prev) => {
       return {
         ...prev,
-        [name]: value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   }
 
   const ckecklogin = () => {
-    if (!correctData) {
+    if (correctData === "incorrect name or password") {
       showAlert("error", "Insert correct name and password");
-    } else {
+    } else if (correctData === "Didn't agree") {
+      showAlert("error", "Please agree to terms of use");
+    } else if (correctData === true) {
+      showAlert("success", "Logged in successfully");
       RemoveCookie("user");
       SetCookie("user", "Demessie");
     }
   };
 
   const correctData =
-    formData.username === "Demessie" && formData.password === "Shop1234";
+    formData.username === "Demessie" && formData.password === "Shop1234"
+      ? formData.isAgreed
+        ? true
+        : "Didn't agree"
+      : "incorrect name or password";
 
   return (
     <div className="loginsignup">
@@ -75,7 +83,7 @@ export const LoginSignup = () => {
             <p>Example: Shop1234</p>
           </div>
         </div>
-        <Link to={correctData ? "/" : "/login"}>
+        <Link to={correctData === true ? "/" : "/login"}>
           <button onClick={ckecklogin}>
             {isnewuser === true ? "Continue" : "Log in"}
           </button>
@@ -93,7 +101,13 @@ export const LoginSignup = () => {
           </span>
         </p>
         <div className="lgoinsignup-agree">
-          <input type="checkbox" name="" id="" checked="true" />
+          <input
+            type="checkbox"
+            name="isAgreed"
+            id=""
+            checked={formData.isAgreed}
+            onChange={handleChane}
+          />
           <p>By continuing, I agree to terms of use and privacy policy.</p>
         </div>
       </div>

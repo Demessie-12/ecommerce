@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Item.css";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Item = (props) => {
+  const { SetMenufunction } = useContext(ShopContext);
   return (
     <div className="item" id={`ID${props.id}`}>
       <Link to={`/product/${props.id}`}>
-        <img onClick={window.scrollTo(0, 0)} src={props.image} alt="" />
+        <img
+          onClick={() => {
+            SetMenufunction("");
+            window.scrollTo(0, 0);
+          }}
+          src={props.image}
+          alt=""
+        />
       </Link>
       <Link style={{ textDecoration: "none" }} to={`/product/${props.id}`}>
-        <p onClick={window.scrollTo(0, 0)}>{props.name}</p>
+        <p
+          onClick={() => {
+            SetMenufunction("");
+            window.scrollTo(0, 0);
+          }}
+        >
+          {props.name}
+        </p>
       </Link>
       <div className="item-footer">
         <div className="item-prices">

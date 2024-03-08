@@ -33,7 +33,6 @@ const ProductDisplay = (props) => {
             <p>(122)</p>
           </div>
         </div>
-        <h1>{product.name}</h1>
       </div>
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">

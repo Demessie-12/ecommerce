@@ -16,6 +16,7 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   const [menu, setMenu] = useState("shop");
   const [tradition, setTradition] = useState("ethiopia");
+  const [delivery, setDelivery] = useState("Addis Ababa");
   //   const [navVisibility, setNavVisibility] = useState(false);
 
   const SetMenufunction = (i) => {
@@ -69,6 +70,8 @@ const ShopContextProvider = (props) => {
     menu,
     Settradition,
     tradition,
+    setDelivery,
+    delivery,
   };
 
   return (

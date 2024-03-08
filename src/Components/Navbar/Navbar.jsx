@@ -99,6 +99,7 @@ const Navbar = ({ isopen, setIsOpen }) => {
             <Link
               to="/login"
               onClick={() => {
+                window.scroll(0, 0);
                 SetMenufunction("");
               }}
             >

@@ -1,0 +1,58 @@
+.delivery {
+  display: flex;
+  height: 40px;
+  background-color: #128f83;
+  color: black;
+  padding-left: 5vw;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    height: 30px;
+    background-color: #128f83;
+    color: black;
+    padding-left: 15px;
+    align-items: center;
+  }
+}
+.delivery .locationIcon {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-right: 5px;
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+.delivery p {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 5px;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-right: 2px;
+  }
+}
+.delivery form {
+  display: flex;
+  align-items: center;
+  width: min-content;
+}
+.delivery select {
+  display: flex;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  border: none;
+  width: fit-content;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+.delivery option {
+  background-color: #128f83;
+  font-size: 18px;
+  color: white;
+  margin: none;
+  border: none;
+}

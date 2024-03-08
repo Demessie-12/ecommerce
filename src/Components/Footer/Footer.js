@@ -80,7 +80,10 @@ const Footer = () => {
           <div className="footer-social-icon">
             <div className="footer-logo">
               <img src={footer_logo} alt="" />
-              <p>SHOOPPER</p>
+
+              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+                <p>ShopIt</p>
+              </Link>
             </div>
             <div className="footer-icon-container">
               <div className="footer-icon">
@@ -105,7 +108,15 @@ const Footer = () => {
         <p>
           Already a customer?{" "}
           <span>
-            <Link to="/login">Login</Link>
+            <Link
+              to="/login"
+              onClick={() => {
+                SetMenufunction("");
+                window.scroll(0, 0);
+              }}
+            >
+              Login
+            </Link>
           </span>
         </p>
         <p>© 2024 - Demessie Wondimu</p>
